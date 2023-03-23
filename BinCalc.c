@@ -30,29 +30,14 @@ result = inf 01111111100000000000000000000000
 
 ➜  ./BinCalc 0 / 0
 Invalid operand or operation: FE_INVALID
-val1   = 0.000000 00000000000000000000000000000000 
-val2   = 0.000000 00000000000000000000000000000000 
+val1   = 0.000000 00000000000000000000000000000000
+val2   = 0.000000 00000000000000000000000000000000
 result = -nan 11111111110000000000000000000000
 
 */
 
 char *floatToBinary(float num)
 {
-    /*
-    union
-    {
-        float f;
-        unsigned int i;
-    } binary;
-    binary.f = num;
-    char *result = (char *)malloc(sizeof(char) * 33);
-    for (int i = 31; i >= 0; i--)
-    {
-        result[31 - i] = (binary.i >> i) & 1 ? '1' : '0';
-    }
-    result[32] = '\0';
-    return result; */
-
     char *result = (char *)malloc(sizeof(char) * 33);
     if (result == NULL)
     {
