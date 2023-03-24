@@ -1,3 +1,5 @@
+// Gabriel Reis Panho - 23/03/23 - PUCRS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <fenv.h>
